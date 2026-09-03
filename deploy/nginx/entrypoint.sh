@@ -37,7 +37,7 @@ server {
 server {
     listen 80;
     listen [::]:80;
-    server_name localhost ${NGINX_SERVER_NAME};
+    server_name ${NGINX_SERVER_NAME};
 
     location = /healthz {
         access_log off;
